@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "edu.luiz.projeto2.App",
+            "projectName": "first-java-project_e575b8ac",
+            "args": []
+        }
+    ]
+}
