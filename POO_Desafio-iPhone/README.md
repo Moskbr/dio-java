@@ -4,7 +4,8 @@ Desafio do Bootcamp de Java da DIO para exercício dos conceitos de POO.
 
 ## Diagrama UML
 
-::: mermaid
+``` mermaid
+
 classDiagram
     class ReprodutorMusical {
         +tocar()
@@ -30,7 +31,7 @@ classDiagram
     iPhone --> ReprodutorMusical
     iPhone --> AparelhoTelefonico
     iPhone --> NavegadorInternet
-:::
+```
 
 ---
 
