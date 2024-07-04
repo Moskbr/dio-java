@@ -1,18 +1,31 @@
-## Getting Started
+# Projeto para Anotações
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Esse projeto possui implementações para exercitar conceitos aprendidos no Bootcamp Java da DIO.
 
-## Folder Structure
+O pacote `edu.luiz.fundamentos` possui algumas anotações sobre a linguagem Java, como a classe *Scanner*.
+A Classe `edu.luiz.projeto2.App` possui apenas algumas anotações gerais comentadas também sobre a classe *Scanner* do Java.
 
-The workspace contains two folders by default, where:
+## *Collections*
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Interface da qual é implementada por algumas estruturas de dados. A seguir, anotações das aulas da DIO:
+- `List`:
+- `Set`:
+- `Map`:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+A estrutura de dados `Queue` também implementa a interface *Collections*.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## *Comparator* X *Comparable*
 
-## Dependency Management
+Utilizados para comparações e **ordenação** de objeto do tipo *Collections*
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+*Comparator*: Implementada pelas classes (Ex: `Collections.sort()`)*
+
+*Comparable*: Necessário ser implementada por classe auxiliar.*
+
+Observações:
+- ***Class Object***: Classe mãe de todas as outras classes em Java.
+- "***diamond operator***": tipo genérico "*Object*\<*Element*>";
+
+### Atividades
+
+O pacote `edu.luiz.collections` implementa atividades propostas pela DIO:
