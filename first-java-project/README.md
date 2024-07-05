@@ -8,7 +8,7 @@ A Classe `edu.luiz.projeto2.App` possui apenas algumas anotações gerais coment
 ## *Collections*
 
 Interface da qual é implementada por algumas estruturas de dados. A seguir, anotações das aulas da DIO:
-- `List`:
+- `List`: Comprimento dinâmico; Permite elementos duplicados;
 - `Set`:
 - `Map`:
 
@@ -28,4 +28,4 @@ Observações:
 
 ### Atividades
 
-O pacote `edu.luiz.collections` implementa atividades propostas pela DIO:
+O pacote `edu.luiz.collections` implementa atividades propostas pela DIO para cada uma das estrutura de dados (*List*,*Set* e *Map*) divididas em três tópicos: `OperacoesBasicas`, `Odenacao` e `Pesquisa`, uma atividade cada.
