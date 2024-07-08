@@ -18,13 +18,14 @@ A estrutura de dados `Queue` também implementa a interface *Collections*.
 
 Utilizados para comparações e **ordenação** de objeto do tipo *Collections*
 
-*Comparator*: Implementada pelas classes (Ex: `Collections.sort()`)*
+*Comparable*: Implementada pelas classes (`Collections.sort(Collection<T> coll)`).
 
-*Comparable*: Necessário ser implementada por classe auxiliar.*
+*Comparator*: Necessita ser implementada por uma classe exclusiva (`Collections.sort(Collection<T> coll, Comparator<T> comp)`).
 
 Observações:
 - ***Class Object***: Classe mãe de todas as outras classes em Java.
-- "***diamond operator***": tipo genérico "*Object*\<*Element*>";
+- "***diamond operator***": tipo genérico "*Object*\<*Element*>".
+- ***Wrapper Class***: Classes que englobam os tipos primitivos de variáveis para adicionar métodos e funcionalidades (por exemplo, todos *wrapper* implementam a função "*.compare()*" da *Comparable*).
 
 ### Atividades
 

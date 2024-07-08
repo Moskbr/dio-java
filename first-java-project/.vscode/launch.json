@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "OrdenacaoNumeros",
+            "request": "launch",
+            "mainClass": "edu.luiz.collections.list.Ordenacao.OrdenacaoNumeros",
+            "projectName": "first-java-project_e575b8ac"
+        },
+        {
+            "type": "java",
             "name": "SomaNumeros",
             "request": "launch",
             "mainClass": "edu.luiz.collections.list.Pesquisa.SomaNumeros",
