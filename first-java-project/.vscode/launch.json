@@ -3,6 +3,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LivrariaOnline",
+            "request": "launch",
+            "mainClass": "edu.luiz.collections.map.Ordenacao.LivrariaOnline",
+            "projectName": "first-java-project_e575b8ac"
+        },
+        {
+            "type": "java",
+            "name": "ContagemPalavras",
+            "request": "launch",
+            "mainClass": "edu.luiz.collections.map.Pesquisa.ContagemPalavras",
+            "projectName": "first-java-project_e575b8ac"
+        },
+        {
+            "type": "java",
+            "name": "Dicionario",
+            "request": "launch",
+            "mainClass": "edu.luiz.collections.map.OperacoesBasicas.Dicionario",
+            "projectName": "first-java-project_e575b8ac"
+        },
+        {
+            "type": "java",
+            "name": "GerenciadorAlunos",
+            "request": "launch",
+            "mainClass": "edu.luiz.collections.set.Ordenacao.GerenciadorAlunos",
+            "projectName": "first-java-project_e575b8ac"
+        },
+        {
+            "type": "java",
+            "name": "ListaTarefas",
+            "request": "launch",
+            "mainClass": "edu.luiz.collections.set.Pesquisa.ListaTarefas",
+            "projectName": "first-java-project_e575b8ac"
+        },
+        {
+            "type": "java",
+            "name": "ConjuntoPalavrasUnicas",
+            "request": "launch",
+            "mainClass": "edu.luiz.collections.set.OperacoesBasicas.ConjuntoPalavrasUnicas",
+            "projectName": "first-java-project_e575b8ac"
+        },
+        {
+            "type": "java",
             "name": "OrdenacaoNumeros",
             "request": "launch",
             "mainClass": "edu.luiz.collections.list.Ordenacao.OrdenacaoNumeros",
