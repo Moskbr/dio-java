@@ -25,15 +25,42 @@ A estrutura de dados `Queue` também implementa a interface *Collections*.
 
 Utilizados para comparações e **ordenação** de objeto do tipo *Collections*
 
-***Comparable***: Implementada pelas classes (`Collections.sort(Collection<T> coll)`). Necessita sobreescrita do `compareTo()`
+**Comparable**: Implementada pelas classes (`Collections.sort(Collection<T> coll)`). Necessita sobreescrita do `compareTo()`
 
-***Comparator***: Necessita ser implementada por uma classe exclusiva auxiliar (`Collections.sort(Collection<T> coll, Comparator<T> comp)`). Essa classe deve sobrescrever o método `compare()`
+**Comparator**: Necessita ser implementada por uma classe exclusiva auxiliar (`Collections.sort(Collection<T> coll, Comparator<T> comp)`). Essa classe deve sobrescrever o método `compare()`
 
 Observações:
-- ***Class Object***: Classe mãe de todas as outras classes em Java.
-- "***diamond operator***": tipo genérico "*Object*\<*Element*>".
-- ***Wrapper Class***: Classes que englobam os tipos primitivos de variáveis para adicionar métodos e funcionalidades (por exemplo, todos *wrapper* implementam a função "*.compare()*" da *Comparable*).
+- **Class Object**: Classe mãe de todas as outras classes em Java.
+- "**diamond operator**": tipo genérico "*Object*\<*Element*>".
+- **Wrapper Class**: Classes que englobam os tipos primitivos de variáveis para adicionar métodos e funcionalidades (por exemplo, todos *wrapper* implementam a função "*.compare()*" da *Comparable*).
 
 ### Atividades
 
 O pacote `edu.luiz.collections` implementa atividades propostas pela DIO para cada uma das estrutura de dados (*List*,*Set* e *Map*) divididas em três tópicos: `OperacoesBasicas`, `Odenacao` e `Pesquisa`, uma atividade cada.
+
+## Stream API
+
+Combina `Expressões Lambda` e `Method Reference` para soluções de código mais rápidas e simplificadas, podendo substituir um bloco inteiro de código, por apenas uma linha.
+
+- `Expressões Lambda`: *functional interfaces*; formato: (argumento(s)) -> (corpo);
+- `Method Reference`: forma mais simples de escrever expressões Lambda com *Class* :: *attribute*.
+
+### *Functional Interfaces*
+
+***Consumer\<T>***: operação com argumento::T *sem retornar/modificar nenhum valor (***void***)*; Se trata de uma *interface* no qual a função *accept(arg::T)* deve ser implementada/sobrecarregada. Essa implementação pode ser feita de forma mais direta utilizando `Expressões Lambda` (Ex: *.forEach()* substitui *for()*).
+
+***Supplier\<T>***: *não* aceita argumentos, e *retorna* valor do tipo T (Ex: *Stream.generate()* substitui *for()*); da mesma forma, possui um método, *get()*, a ser implementado com Lambda Expressions.
+
+***Function\<T,R>***: T é a entrada e R é o tipo de retorno (Ex: *.map()*); implementação do metodo *R apply(arg::T)*.
+
+***Predicate\<T>***: arg::T e retorna *Boolean* (Ex: *.stream().filter()* substitui *for()if()*); implementação do método *boolean test(arg::T)*.
+
+***BinaryOperator\<T>***: dois argumentos do mesmo tipo -  (arg1::T, arg2::T) - e retorna um tipo T; Poranto, faz uma operação aritmética (Ex: *.reduce(identity=0, BinOp\<T>)*); método implementado: *T apply(arg1::T, arg2::T)* (sobrecarga da interface *Function|\<T>*) substitui uma operação aritmética.
+
+> **OBS**: Operações Intermediárias (*filter()*, *map()*, ...); Operações Terminais (*forEach()*, *toArray()*, ...).
+
+**Extra**: ***Class Optional\<T>*** - objetivo: evitar *NullPointerException* (NPE) ou referências nulas, **encapsulando** um valor que pode ou não ser nulo. (Ex: *of(value)*, *orElseGet(supplier)*, ... ver DOC).
+
+### Desafios
+
+Lista de desafios proposto pela DIO (cami-la) cobrindo o assunto de *Functional Interfaces* estão disponíveis neste [repositório](https://github.com/digitalinnovationone/ganhando_produtividade_com_Stream_API_Java/blob/master/src/stream_api/README.md). Os desafios que foram resolvidos estão na pasta `edu.luiz.streams`.
